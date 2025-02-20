@@ -1,41 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verification Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        window.onload = function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const username = urlParams.get('username') || "Unknown User";
-            const route = urlParams.get('route') || "N/A";
-            const busNo = urlParams.get('bus_no') || "N/A";
-            const subscription = urlParams.get('subscription') || "N/A";
-            
-            document.getElementById("username").innerText = username;
-            document.getElementById("route").innerText = route;
-            document.getElementById("busNo").innerText = busNo;
-            document.getElementById("subscription").innerText = subscription;
-        };
-    </script>
+    <meta http-equiv="refresh" content="0; url=verification.html">
 </head>
 <body>
-    <div class="header">← Back</div>
-
-    <div class="verified-badge">
-        <img src="verified-icon.png" alt="Verified">
-    </div>
-
-    <div class="verified-text">VERIFIED</div>
-
-    <div class="user-info">
-        <p>User: <span id="username"></span></p>
-        <p>Route: <span id="route"></span></p>
-        <p>Bus No: <span id="busNo"></span></p>
-        <p>Subscription: <span id="subscription"></span></p>
-    </div>
-
-    <div class="footer">JOG<span style="color: black;">A</span>JOG</div>
+    <p>If you are not redirected, <a href="verification.html">click here</a>.</p>
 </body>
 </html>
